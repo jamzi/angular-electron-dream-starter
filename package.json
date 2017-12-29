@@ -30,7 +30,7 @@
     "ci:jit": "npm run test && npm run build:prod && npm run e2e",
     "ci:nobuild": "npm run test && npm run e2e",
     "ci:testall": "npm run test && npm run build:prod && npm run e2e && npm run build:aot && npm run e2e",
-    "ci:travis": "npm run test",
+    "ci:travis": "npm run test && npm run build:prod && npm run e2e",
     "ci": "npm run ci:aot",
     "clean:aot": "rimraf compiled",
     "clean:appdata": "electron config/clean-app-data",
